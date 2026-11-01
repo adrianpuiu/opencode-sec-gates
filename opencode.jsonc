@@ -45,51 +45,6 @@
     }
   },
   "provider": {
-    "local-vllm": {
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://127.0.0.1:8000/v1",
-        "apiKey": "local"
-      },
-      "models": {
-        "local-inference-lab/Qwen3.8-Flash-Next-NVFP4": {
-          "name": "Qwen3.8 Flash Next NVFP4 (local vLLM)",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ]
-          }
-        },
-        "qwen3.8-flash-next-a5b": {
-          "name": "Qwen3.8 Flash Next 125B (local vLLM)",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ]
-          }
-        }
-      }
-    },
-    "spark-vllm": {
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://192.168.0.206:8000/v1",
-        "apiKey": "local"
-      },
-      "models": {
-        "nvidia/Qwen3.8-Flash-Next-FP4-Local": {
-          "name": "Qwen3.8 Flash Next FP4 (Spark vLLM)",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ]
-          }
-        }
-      }
-    },
     "gx10-tp2": {
       "npm": "@ai-sdk/openai-compatible",
       "options": {
@@ -116,24 +71,6 @@
             "context": 1048576,
             "output": 32768
           },
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ]
-          }
-        }
-      }
-    },
-    "gx10-vllm": {
-      "npm": "@ai-sdk/openai-compatible",
-      "options": {
-        "baseURL": "http://gx10-8828.taild4553a.ts.net:8000/v1",
-        "apiKey": "local"
-      },
-      "models": {
-        "local-inference-lab/Qwen3.8-Flash-Next-NVFP4": {
-          "name": "Qwen3.8 Flash Next NVFP4 (gx10 vLLM)",
           "modalities": {
             "input": [
               "text",
